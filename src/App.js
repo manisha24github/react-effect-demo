@@ -1,9 +1,13 @@
 import './App.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 
 export default function App() {
   const [resourceType, setResourceType] = useState('posts')
+
+  useEffect(() =>{
+    console.log('render')
+  })
   return (
     <>
     <div>
@@ -16,4 +20,4 @@ export default function App() {
   )
 }
 
-;
+
